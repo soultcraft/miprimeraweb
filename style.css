@@ -1,0 +1,332 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 16px;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: rgb(66, 63, 69);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%; 
+    height: 3em;
+    font-size: 1em;
+}
+
+header a i {
+    color: white;
+    font-size: 2em;
+    padding: 0.2em 0.2em 0.2em 1em;
+}
+
+header nav ul {
+    display: flex;
+    padding: 0 1em 0 0;
+    gap: 1.1em;
+}
+
+header nav ul li a{
+    color: rgb(255, 255, 255);
+}
+
+
+footer {
+    background-color:  rgb(66, 63, 69);
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+/* ------------------header ---------------*/
+
+#check {
+    display: none;
+}
+
+.logo {
+    font-size: 1em;
+}
+
+.checkbtn {
+    display: none;
+    font-size: 2em;
+    color: white;
+    float: right;
+    /* line-height: 3.1em; */
+    /* margin-right: 2.5em; */
+    cursor: pointer;
+}
+
+/* ------------------ body ---------------*/
+
+.seccion-1 {
+    background-color: rgb(206, 226, 215);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 4em 5em 1em 5em;
+}
+
+.acerca-de {
+    text-align: right;
+    width: 25em;
+}
+
+.seccion-1 img {
+    display: block;
+    max-width: 12em;
+}
+
+.seccion-2 img {
+    /* clip-path: inset(15% 0 15% 0);            recortar una imagen */
+    width: 100%;
+}
+
+.seccion-3 {
+    display: block;
+    font-size: 1em;
+    padding: 0 5em 0 5em;
+}
+
+.contenedor-trabajo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1em;
+    gap: 1em;
+}
+
+.bloque {
+    width: 15em;
+}
+
+.parrafo-bloque {
+    text-align: justify;
+}
+
+.contenedor-trabajo img.imagen-bloque {
+    display: block;
+    width: 100%;
+}
+
+/* ------------------ footer ---------------*/
+
+#footer {
+    padding: 1em;
+}
+
+#footer nav ul li a {
+    color: white;
+}
+
+.fuente-acento {
+    color: rgb(55, 168, 128);
+}
+
+a i.fa-solid.fa-heart.fixed {
+    color: rgb(29, 147, 80);
+    position: fixed;
+    bottom: 22px;
+    right: 39px;
+}
+
+/* ------------- Encabezado Formulario ------------- */
+
+.form-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    /* background-color: #f6f7f8;
+    border: 1px solid #d6d9dc; */
+    border-radius: 3px;
+  
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+  }
+  
+  .form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  /* ------------- Formulario ------------- */
+  
+  .formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+  }
+
+  /* ------------- Campos del Formulario ------------- */
+
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type="text"], 
+.form-row input[type="email"] {
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 3px;
+  text-align: initial;
+}
+
+.form-row textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+
+  width: 100%;
+}
+
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #ffffff;
+  background-color: #5995da;
+
+  border: none;
+  border-radius: 3px;
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.form-row button:hover {
+  background-color: #76aeed;
+}
+
+.form-row button:active {
+  background-color: #407fc7;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        display: flex;
+        background-color: rgb(30, 82, 67);
+    }
+
+    header nav {
+        padding: 0 1em 0 0;
+    }
+
+    header nav ul {
+        display: block;
+    }
+
+
+    .checkbtn {
+        display: block;
+    }
+
+    #encabezado ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color:  rgb(66, 63, 69);
+        text-align: center;
+        padding: 0;
+
+        top: 1.6em;
+        left: 100%;
+        transition: all 0.5s;
+        
+    }
+
+    #check:checked ~ ul {
+        left: 0%;
+        display: block;
+    }
+
+    #encabezado nav ul li {
+        display: block;
+        margin: 2em 0;
+        line-height: 1.875em;
+    }
+
+    #encabezado nav ul li a {
+        font-size: 1.25em;
+    }
+
+    #check:checked ~ .checkbtn {
+        color: rgb(109, 179, 205);
+    }
+    
+}
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+@media only screen and (min-width: 700px) {
+    .form-header {
+      padding: 50px;
+    }
+  
+    .form-row {
+      flex-direction: row;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .form-row input[type="text"], 
+    .form-row input[type="email"] {
+      width: 250px;
+      height: initial;
+    }
+    .form-row label {
+      text-align: left;
+      width: 120px;
+      margin-top: 7px;
+      padding-right: 20px;
+    }
+    .form-row textarea {
+      width: 250px;
+    }
+    .form-row button {
+      margin-left: 120px;
+    }
+  }
