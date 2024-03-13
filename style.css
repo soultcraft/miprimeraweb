@@ -55,6 +55,7 @@ footer a {
 
 /* ------------------header ---------------*/
 
+
 #check {
     display: none;
 }
@@ -74,6 +75,14 @@ footer a {
 }
 
 /* ------------------ body ---------------*/
+
+.greeting {
+    color: #ffffff;
+    background-color:  rgb(66, 63, 69);
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+}
 
 .seccion-1 {
     background-color: rgb(206, 226, 215);
